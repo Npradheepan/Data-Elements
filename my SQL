@@ -1,0 +1,109 @@
+virtualhost
+
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:8888>
+    ServerName page.test
+    ServerAlias page.test
+    ServerAdmin pn@kps-kommunikation.de
+    ErrorLog "/Applications/MAMP/logs/page.test-error_log"
+    CustomLog "/Applications/MAMP/logs/page.test-access_log" common
+    DocumentRoot "/Applications/MAMP/htdocs/page"
+    <Directory "/Applications/MAMP/htdocs/page">
+        Options Indexes FollowSymLinks Includes execCGI
+        AllowOverride All
+        Order Allow,Deny
+        Allow From All
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:8888>
+    ServerName site-2.test
+    ServerAlias site-2.test
+    ServerAdmin pn@kps-kommunikation.de
+    ErrorLog "/Applications/MAMP/logs/site-2.test-error_log"
+    CustomLog "/Applications/MAMP/logs/site-2.test-access_log" common
+    DocumentRoot "/Applications/MAMP/htdocs/site-2"
+    <Directory "/Applications/MAMP/htdocs/site-2">
+        Options Indexes FollowSymLinks Includes execCGI
+        AllowOverride All
+        Order Allow,Deny
+        Allow From All
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:8888>
+    ServerName window.test
+    ServerAlias window.test
+    ServerAdmin pn@kps-kommunikation.de
+    ErrorLog "/Applications/MAMP/logs/window.test-error_log"
+    CustomLog "/Applications/MAMP/logs/window.test-access_log" common
+    DocumentRoot "/Applications/MAMP/htdocs/window"
+    <Directory "/Applications/MAMP/htdocs/window">
+        Options Indexes FollowSymLinks Includes execCGI
+        AllowOverride All
+        Order Allow,Deny
+        Allow From All
+    </Directory>
+</VirtualHost> 
+
+<VirtualHost *:8888>
+    ServerName mazodana.test
+    ServerAlias mazodana.test
+    ServerAdmin pn@kps-kommunikation.de
+    ErrorLog "/Applications/MAMP/logs/mazodana.test-error_log"
+    CustomLog "/Applications/MAMP/logs/mazodana.test-access_log" common
+    DocumentRoot "/Applications/MAMP/htdocs/mazodana"
+    <Directory "/Applications/MAMP/htdocs/mazodana">
+        Options Indexes FollowSymLinks Includes execCGI
+        AllowOverride All
+        Order Allow,Deny
+        Allow From All
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:8888>
+    ServerName php-tutorial.test
+    ServerAlias php-tutorial.test
+    ServerAdmin pn@kps-kommunikation.de
+    ErrorLog "/Applications/MAMP/logs/php-tutorial.test-error_log"
+    CustomLog "/Applications/MAMP/logs/php-tutorial.test-access_log" common
+    DocumentRoot "/Applications/MAMP/htdocs/php-tutorial"
+    <Directory "/Applications/MAMP/htdocs/php-tutorial">
+        Options Indexes FollowSymLinks Includes execCGI
+        AllowOverride All
+        Order Allow,Deny
+        Allow From All
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:8888>
+    ServerName site-4.test
+    ServerAlias site-4.test
+    ServerAdmin pn@kps-kommunikation.de
+    ErrorLog "/Applications/MAMP/logs/site-4.test-error_log"
+    CustomLog "/Applications/MAMP/logs/site-4.test-access_log" common
+    DocumentRoot "/Applications/MAMP/htdocs/site-4"
+    <Directory "/Applications/MAMP/htdocs/site-4">
+        Options Indexes FollowSymLinks Includes execCGI
+        AllowOverride All
+        Order Allow,Deny
+        Allow From All
+    </Directory>
+</VirtualHost>
+
+<VirtualHost *:8888>
+    ServerName mysql link with php.test
+    ServerAlias mysql link with php.test
+    ServerAdmin pn@kps-kommunikation.de
+    ErrorLog "/Applications/MAMP/logs/mysql link with php.test-error_log"
+    CustomLog "/Applications/MAMP/logs/mysql link with php.test-access_log" common
+    DocumentRoot "/Applications/MAMP/htdocs/mysql link with php"
+    <Directory "/Applications/MAMP/htdocs/mysql link with php">
+        Options Indexes FollowSymLinks Includes execCGI
+        AllowOverride All
+        Order Allow,Deny
+        Allow From All
+    </Directory>
+</VirtualHost>
